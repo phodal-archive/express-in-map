@@ -21,6 +21,9 @@ fs.readFile(file, 'utf8', function (err, expressInfos) {
 
         if (statusDescription.indexOf('已揽收') !== -1) {
             data.get = express;
+
+            var regex = /^(.*?)公司/.exec(express.StatusDescription);
+            data.get.location = regex[1];
         }
         if (statusDescription.indexOf('已发出,下一站') !== -1) {
             data.transport.push(express);
