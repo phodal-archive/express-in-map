@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/phodal/express-in-map/issues"
   },
-  "homepage": "https://github.com/phodal/express-in-map#readme"
+  "homepage": "https://github.com/phodal/express-in-map#readme",
+  "dependencies": {
+    "lodash": "^4.15.0"
+  }
 }
